@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '/constants.dart';
 import 'menu_item.dart';
 
 class SideMenu extends StatelessWidget {
@@ -7,7 +7,7 @@ class SideMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: double.infinity,
-      color: Colors.white,
+      color: Colors.redAccent,
       child: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(20),
@@ -20,7 +20,9 @@ class SideMenu extends StatelessWidget {
               SizedBox(height: 10),
               NavItem(
                 title: 'Contact',
-                tapEvent: () {},
+                tapEvent: () {
+                  Store.launchURL();
+                },
               ),
               SizedBox(height: 10),
             ],

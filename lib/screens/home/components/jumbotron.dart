@@ -40,26 +40,26 @@ class Jumbotron extends StatelessWidget {
                     TextSpan(
                         text: 'Hello ',
                         style: TextStyle(
-                            fontSize: isDesktop(context) ? 64 : 32,
+                            fontSize: isDesktop(context) ? 64 : 20,
                             fontWeight: FontWeight.w800,
                             color: kTextColor)),
                     TextSpan(
                         text: 'everyone!',
                         style: TextStyle(
-                            fontSize: isDesktop(context) ? 64 : 32,
+                            fontSize: isDesktop(context) ? 64 : 20,
                             fontWeight: FontWeight.w800,
                             color: Colors.red)),
                   ])),
                   Text(
                     'My name is Phisanurat',
                     style: TextStyle(
-                        fontSize: isDesktop(context) ? 64 : 32,
+                        fontSize: isDesktop(context) ? 32 : 18,
                         fontWeight: FontWeight.w800),
                   ),
                   Text(
                     'I\'m a "Software Engineer"',
                     style: TextStyle(
-                        fontSize: isDesktop(context) ? 64 : 32,
+                        fontSize: isDesktop(context) ? 32 : 18,
                         fontWeight: FontWeight.w800),
                   ),
                   SizedBox(height: 10),
@@ -74,7 +74,7 @@ class Jumbotron extends StatelessWidget {
                       textStyle: TextStyle(
                           color: Colors.red,
                           letterSpacing: .5,
-                          fontSize: 24,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold),
                     ),
                   ),

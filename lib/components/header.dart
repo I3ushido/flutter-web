@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web/responsive.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants.dart';
+import '/constants.dart';
 import 'menu_item.dart';
 
 class Header extends StatelessWidget {
@@ -37,7 +37,9 @@ class Header extends StatelessWidget {
                 ),
                 NavItem(
                   title: 'Contact',
-                  tapEvent: () {},
+                  tapEvent: () {
+                    Store.launchURL();
+                  },
                 ),
               ],
             ),

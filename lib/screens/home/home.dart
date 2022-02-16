@@ -21,29 +21,18 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       endDrawer: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxWidth: 300
-        ),
+        constraints: BoxConstraints(maxWidth: 300),
         child: SideMenu(),
       ),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Container(
             width: size.width,
-            constraints: BoxConstraints(
-              minHeight: size.height
-            ),
-
+            constraints: BoxConstraints(minHeight: size.height),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Header(),
-
-                Jumbotron(),
-
-                Footer()
-              ],
+              children: <Widget>[Header(), Jumbotron(), Footer()],
             ),
           ),
         ),
