@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
@@ -20,15 +19,12 @@ class MainButton extends StatelessWidget {
       child: TextButton(
         onPressed: tapEvent,
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(color),
-          padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 35, vertical: 15))
-        ),
+            backgroundColor: MaterialStateProperty.all<Color>(color),
+            padding: MaterialStateProperty.all(
+                EdgeInsets.symmetric(horizontal: 35, vertical: 15))),
         child: Text(
           title,
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w600
-          ),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
         ),
       ),
     );
